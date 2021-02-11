@@ -20,7 +20,7 @@ a {
   max-width: 160px;
 }
 .header-container {
-  max-width: 1280px;
+  max-width: 960px;
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
@@ -50,7 +50,7 @@ a {
   display: grid;
   gap: 30px;
   grid-template-columns: 2fr 1fr;
-  max-width: 1280px;
+  max-width: 960px;
   margin: 0 auto;
   height: 480px;
   align-items: center;
@@ -73,5 +73,45 @@ a {
   height: 8px;
   width: 120px;
   margin: 10px 0;
+}
 
+/* Processos */
+.processos{
+  padding: 60px 0;
+  background: #302e3e;
+
+}
+.processos h1{
+  font-family: "Limelight", cursive;
+  font-size: 4.125em;
+  grid-column: 1/-1;
+}
+.processos-container{
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 960px;
+  margin: 0 auto;
+}
+.processos span{
+  color: #b49f81;
+  display: block;
+  font-family: "Limelight", cursive;
+  font-size: 4.125em;
+}
+.processos span::after{
+  content: "";
+  display: block;
+  background: #b49f81;
+  height: 8px;
+  width: 60px;
+  margin: -5px 0 20px 0;
+}
+.processos p{
+  font-family: Adobe Caslon Pro;
+  font-size: 1.125em;
+  color: #fff;
+  opacity: .60;
+  line-height: 1.4;
+  letter-spacing: .05em;
 }
