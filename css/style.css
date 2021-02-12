@@ -66,40 +66,48 @@ a {
   font-size: 3em;
   color: #b49f81;
 }
-.intro p::after, .intro p::before {
+.intro p::after,
+.intro p::before {
   content: "";
   display: block;
-  background: #B49F81;
+  background: #b49f81;
   height: 8px;
   width: 120px;
   margin: 10px 0;
 }
 
 /* Processos */
-.processos{
+.processos {
   padding: 60px 0;
   background: #302e3e;
-
 }
-.processos h1{
+.processos h1 {
   font-family: "Limelight", cursive;
   font-size: 4.125em;
   grid-column: 1/-1;
 }
-.processos-container{
+.processos h1::after {
+  content: "";
+  display: block;
+  background: #000;
+  height: 8px;
+  width: 120px;
+  margin: 10px 0;
+}
+.processos-container {
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(3, 1fr);
   max-width: 960px;
   margin: 0 auto;
 }
-.processos span{
+.processos span {
   color: #b49f81;
   display: block;
   font-family: "Limelight", cursive;
   font-size: 4.125em;
 }
-.processos span::after{
+.processos span::after {
   content: "";
   display: block;
   background: #b49f81;
@@ -107,11 +115,77 @@ a {
   width: 60px;
   margin: -5px 0 20px 0;
 }
-.processos p{
+.processos p {
   font-family: Adobe Caslon Pro;
   font-size: 1.125em;
   color: #fff;
-  opacity: .60;
+  opacity: 0.6;
   line-height: 1.4;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
+}
+
+/* servicos */
+.servicos {
+  max-width: 960px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  align-content: center;
+}
+.servicos h1,
+.servicos a {
+  grid-column: 1/-1;
+}
+.servicos h1 {
+  text-align: center;
+  padding: 20px 0;
+  font-family: "Limelight", cursive;
+  font-size: 4.125em;
+}
+.servicos h1::after {
+  content: "";
+  display: block;
+  background: #000;
+  height: 8px;
+  width: 120px;
+  margin: 0 auto;
+}
+.servicos-item h2 {
+  font-family: "Limelight", cursive;
+  font-size: 2em;
+  padding: 20px 0;
+  background-color: #b49f81;
+  text-align: center;
+  color: #302e3e;
+}
+.servicos-item {
+  border: solid 8px #707070;
+}
+.servicos-item ul {
+  padding: 20px;
+  max-width: 280px;
+  margin: 0 auto;
+}
+.servicos-item ul li {
+  font-family: Adobe Caslon Pro;
+  color: #302e3e;
+  border-bottom: solid 4px rgba(122, 122, 122, 0.1);
+  margin-bottom: 15px;
+}
+.servicos-item ul li::before {
+  content: "";
+  display: inline-block;
+  background: #000;
+  height: 2px;
+  width: 10px;
+  margin: 10px 5px 5px 0;
+}
+.servicos-item span{
+  display: block;
+  font-family: "Limelight", cursive;
+  font-size: 2em;
+  color: #302E3E;
+  text-align: center;
+margin-top: 20px;
 }
