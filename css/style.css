@@ -10,6 +10,23 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+.btn{
+  display: block;
+  max-width: 220px;
+  margin: 0 auto;
+  font-size: 1.5em;
+  border: 8px solid #b49f81;
+  color: #b49f81;
+  text-transform: uppercase;
+  padding: 10px;
+
+  transition: 100ms all ease-in;
+}
+.btn:hover{
+  border-color:  #707070;
+  color: #707070;
+
+}
 
 /* Header */
 .header {
@@ -132,6 +149,7 @@ a {
   grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
   align-content: center;
+  padding: 40px 0;
 }
 .servicos h1,
 .servicos a {
@@ -188,4 +206,16 @@ a {
   color: #302E3E;
   text-align: center;
 margin-top: 20px;
+}
+
+/* Footer */
+.footer{
+  padding: 20px 0;
+  text-align: center;
+  background: #302e3e;
+}
+.footer p{
+  color: #fff;
+  opacity: .70;
+  font-size: 1em;
 }
