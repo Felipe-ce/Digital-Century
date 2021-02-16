@@ -30,7 +30,6 @@ a {
 
 /* Header */
 .header {
-  padding: 30px 0;
   background: #302e3e;
 }
 .logo {
@@ -42,6 +41,7 @@ a {
   grid-template-columns: 1fr auto;
   align-items: center;
   margin: 0 auto;
+  padding: 30px 10px;
 }
 .menu ul li {
   display: inline-block;
@@ -61,6 +61,11 @@ a {
 .menu ul li a:hover {
   color: #8d8c96;
 }
+@media (max-width: 768px){
+  .menu{
+    display: none;
+  }
+}
 
 /* Introdução */
 .intro {
@@ -71,6 +76,7 @@ a {
   margin: 0 auto;
   height: 480px;
   align-items: center;
+  padding: 20px 10px;
 }
 .intro h1 {
   font-size: 2em;
@@ -91,6 +97,18 @@ a {
   height: 8px;
   width: 120px;
   margin: 10px 0;
+}
+@media (max-width: 768px){
+  .intro {
+    grid-template-columns: auto;
+    height: auto;
+  }
+  .intro p {
+    font-size: 2em;
+  }
+  .intro img{
+    width: 180px;
+  }
 }
 
 /* Processos */
@@ -117,6 +135,7 @@ a {
   grid-template-columns: repeat(3, 1fr);
   max-width: 960px;
   margin: 0 auto;
+  padding: 10px;
 }
 .processos span {
   color: #b49f81;
@@ -140,6 +159,15 @@ a {
   line-height: 1.4;
   letter-spacing: 0.05em;
 }
+@media (max-width: 768px){
+  .processos-container {
+    grid-template-columns: auto;
+    text-align: center;
+  }
+  .processos h1::after, .processos span::after {
+    margin: 0 auto 20px auto;
+  }
+}
 
 /* servicos */
 .servicos {
@@ -149,7 +177,7 @@ a {
   grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
   align-content: center;
-  padding: 40px 0;
+  padding: 40px 10px;
 }
 .servicos h1,
 .servicos a {
@@ -207,6 +235,14 @@ a {
   text-align: center;
 margin-top: 20px;
 }
+@media (max-width: 768px){
+  .servicos {
+
+    grid-template-columns: auto;
+
+  }
+}
+
 
 /* Footer */
 .footer{
